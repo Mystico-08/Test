@@ -1,0 +1,393 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navigation-bar {
+    padding: 20px 40px;
+}
+
+/* Remove bullets + make horizontal */
+.navigation-bar ul {
+    list-style: none;      /* removes bullet points */
+    display: flex;         /* makes items flow in a row */
+    gap: 30px;             /* space between items */
+}
+
+/* Optional styling for list items */
+.navigation-bar ul li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+/*First Section*/
+.first-section{
+    text-align: center;
+    background-color: #6a0031;
+    color: white;
+}
+
+.first-section-buttons{
+ margin-top: 10px;
+ list-style: none;
+ display: flex;
+ gap: 10px;
+ justify-content: center;
+}
+
+#Get-Started  {
+    padding: 10px 20px;          /* space inside button */
+    background-color: white;   /* button color */
+    color: #6a0031;                /* text color */
+    border-radius: 140px;          /* slight rounded corners */
+    cursor: pointer;
+}
+#Get-Started:hover{
+    background-color: #d2a4b4;
+    color: #6a0031;
+}
+#Demo{
+     padding: 10px 20px;        /* space around text */
+    border: 2px solid white;  /* rectangle outline */
+    background: transparent;  /* keeps background same */
+    color: white;
+    cursor: pointer;
+    border-radius: 140px;
+}
+#Demo:hover{
+    background-color: #781744;
+    color:white
+}
+#PIC-1{
+    max-width: 100%;
+}
+/*Second-section*/
+.second-section{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.sec-pic img{
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+#middle-heading{
+    font-size: 70px;
+    margin-left: 70px;
+}
+.carousel-wrapper {
+    position: relative;
+    width: 90%;
+    margin: 3em auto;
+}
+
+.Carousel {
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.Carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    flex: 0 0 20em;
+    height: 12em;
+    background: white;
+    padding: 1em;
+    border-radius: .5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left {
+    left: -25px;
+}
+
+.right {
+    right: -25px;
+}
+
+
+
+
+/*Asana Gov*/
+.gov-list {
+    display: flex;              /* makes li flow left */
+    align-items: center;
+    justify-content: space-evenly; /* pushes button right */
+    list-style: none;
+    border: 2px solid #e7e7e7;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.gov-image img {
+    width: 250px;
+    height: auto;
+}
+
+/* This keeps h3 and p stacked */
+.gov-text {
+    max-width: 100%;
+}
+
+/* Button styling */
+.gov-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 140px;
+}
+.gov-button:hover{
+    color: white;
+    background-color:#6e6e6e;
+}
+
+/*Connect*/
+.Connect ul{
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.Connect p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#int-button {
+    display: inline-block;
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    padding: 6px 16px;
+    margin-top: 5px;
+}
+.image-marquee {
+  /* Hide overflowing content */
+  overflow: hidden;
+  /* Set a fixed height for the marquee area */
+  height: 150px; 
+  /* Add a border or background for visibility */
+  border: 1px solid #ccc; 
+}
+
+.marquee-content {
+  /* Remove default list styles */
+  list-style: none;
+  margin: 0px;
+  padding: 10px;
+  display: flex; 
+  /* Initial position (start just outside the right edge) */
+  transform: translateX(0); 
+  /* Define the animation properties */
+  animation: slide 10s linear infinite; /* Adjust duration as needed */
+}
+
+/* Optional: pause the animation on hover */
+.image-marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* Define the animation keyframes */
+@keyframes slide {
+  /* Start the animation at the initial position */
+  0% {
+    transform: translateX(0);
+  }
+  /* End the animation by moving the full width of the original content to the left */
+  100% {
+    /* Calculate the distance to move (e.g., -100% of the initial content width) */
+    transform: translateX(-100%); 
+  }
+}
+/*Trust*/
+.Trust ul{
+    list-style: none;
+    margin: 50px;
+}
+.case-button{
+    border: 2px solid black;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/*Get started*/
+.Get-started{
+    display:flex;
+    justify-content: space-between;
+    background-color: #fafafa;
+    padding: 50px;
+    font-size: 15px;
+}
+.lhs{
+    margin-left: 50px;
+    list-style: none;
+}
+.lhs p{
+    margin-top: 30px;
+}
+.rhs{
+    cursor: pointer;
+    list-style: none;
+    display: inline-flex;
+    flex-direction:column;
+    background-color: white;
+    border-radius: 10px;
+}
+.rhs:hover{
+    background-color:#d2a4b4 ;
+}
+/*Footer*/
+.upper-footer ul{
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 50px;
+    background-color: #6a0031;
+}
+#footer-button{
+    margin-top:10px ;
+    margin-bottom: 50px;
+    color: #6a0031;
+    background-color: white;
+    display: inline-block;
+    border-radius: 150px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+#footer-button:hover{
+    color: #6a0031;
+    background-color: #d2a4b4;
+}
+.middle-footer ul{
+    background-color: #6a0031;
+    list-style: none;
+    display:flex;
+    color: white;
+    gap: 30px;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.columns{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.columns a{
+      color: #e1bbc7;
+    text-decoration: none;
+}
+.columns a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.lower-footer ul {
+    background-color:#710c3a;
+    list-style: none;
+    display: flex;
+    color:white;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    }
+
+.lower-footer ul li a{
+    color:#e1bbc7;
+    text-decoration: none;
+    cursor: pointer;
+}
+.lower-footer ul li a:hover{
+    color:white;
+    text-decoration: underline;
+}
+/* ========================= */
+/* MOBILE RESPONSIVE FIXES */
+/* ========================= */
+
+@media (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navigation-bar ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .second-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gov-list{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .Get-started{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .middle-footer ul{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #middle-heading{
+        font-size: 28px;
+        margin-left: 15px;
+    }
+
+    .card{
+        flex: 0 0 80%;
+    }
+
+    .left{
+        left: 5px;
+    }
+
+    .right{
+        right: 5px;
+    }
+}

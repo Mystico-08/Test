@@ -1,13 +1,40 @@
-<script>
-const carousel = document.querySelector('.Carousel');
-const leftBtn = document.querySelector('.left');
-const rightBtn = document.querySelector('.right');
+function toggleMenu(id) {
 
-rightBtn.addEventListener('click', () => {
-    carousel.scrollBy({ left: 320, behavior: 'smooth' });
-});
+  const menus = document.querySelectorAll(".mega-menu");
 
-leftBtn.addEventListener('click', () => {
-    carousel.scrollBy({ left: -320, behavior: 'smooth' });
-});
-</script>
+  menus.forEach(menu => {
+    if (menu.id === id) {
+      menu.classList.toggle("active");
+    } else {
+      menu.classList.remove("active");
+    }
+  });
+
+}
+
+function openMobile() {
+  document.getElementById("mobileMenu").classList.add("active");
+}
+
+function closeMobile() {
+  document.getElementById("mobileMenu").classList.remove("active");
+  document.getElementById("mobileContent").innerHTML = "";
+}
+
+function toggleMobileMega(id) {
+  const content = document.getElementById("mobileContent");
+  const menu = document.getElementById(id);
+  content.innerHTML = menu.innerHTML;
+}
+
+  const carousel = document.getElementById("carousel");
+  const nextBtn = document.getElementById("right");
+  const prevBtn = document.getElementById("left");
+
+  nextBtn.addEventListener("click", () => {
+    carousel.scrollLeft += carousel.clientWidth;
+  });
+
+  prevBtn.addEventListener("click", () => {
+    carousel.scrollLeft -= carousel.clientWidth;
+  });

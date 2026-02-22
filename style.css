@@ -346,34 +346,28 @@ h2{
 }
 @media (max-width: 768px) {
   .Ex-wrapper {
-      flex-direction: column;      /* stack cards vertically */
+      flex-direction: column;      
       gap: 1rem;
-      margin: 1rem 0;
+      margin: 1rem ;
   }
 
   .Expandable {
-      flex: none;                  /* remove flex sizing for mobile */
-      width: 100%;                 /* full width of container */
-      flex-direction: column;      /* stack text and image vertically */
-      align-items: flex-start;     /* left-align text */
-      transition: none;            /* remove hover transition for mobile */
+      flex: none;                  
+      width: 90%;               
+      transition: none;           
   }
 
   .Expandable img {
-      order: 2;                    /* move image to bottom */
-      width: 100%;                 /* full width */
-      max-width: 300px;            /* optional max width */
-      opacity: 1;                  /* always visible on mobile */
+      width: 100%;                
+      max-width: 500px;            
       margin-top: 1rem;
       transition: none;
     }
 
-  .Ex-text {
-      order: 1;                    /* text comes first */
-      gap: 1rem;                   /* smaller gap on mobile */
+  .Ex-text {                  
+      gap: 1rem;                 
   }
 
-  /* Disable hover effects on mobile */
   .Ex-wrapper:hover .Expandable,
   .Ex-wrapper .Expandable:hover,
   .Ex-wrapper:hover .Expandable:not(:hover) img {
